@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connections</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="libraries/p5.min.js"></script>
+  </head>
+
+  <body onload="load()">
+    <div id="page_content">
+      <div id="title_container">
+        <img src="assets\title.svg" id="title_image" />
+        <p class="quote">
+          "a relationship in which a person or thing is linked or associated
+          with something else" -
+          <span class="quote_source">Oxford Languages</span>
+        </p>
+      </div>
+
+      <div id="intro_container" class="align_center">
+        <div id="video">
+          <iframe
+            src="https://www.youtube.com/embed/_kTXDoybJ-U"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="intro_links">
+          <a href="#artist_statement" id="artist_button" onclick="showArtist()"
+            >Artist Statement</a
+          >
+          <a
+            href="#proposal_summary"
+            id="summary_button"
+            onclick="showSummary()"
+            >Project Proposal Summary</a
+          >
+          <a
+            href="#proposal_details"
+            id="details_button"
+            onclick="showDetails()"
+            >Details of Proposal</a
+          >
+          <a
+            href="#key_activities"
+            id="activities_button"
+            onclick="showActivities()"
+            >Key Activities</a
+          >
+          <a href="#budget" id="budget_button" onclick="showBudget()">Budget</a>
+        </div>
+      </div>
+
+      <div id="main_container">
+        <div id="artist_statement">
+          <h2>Artist Statement</h2>
+          <p>
+            Hello! My name is Aoife McNamara and I am a graduate of Creative
+            Digital Media BA hons, Munster Technological University Cork. I am a
+            professional artist, in the early stages of their career, whose work
+            focuses on connecting people with tehcnology in shared spaces.
+          </p>
+          <p><i>"Connect together, not alone"</i></p>
+          <p>
+            The methodolgies behind my work involves thorough experiments where
+            I explore the limits of my skills with different technologies and
+            how best they can create an experience for the audience.
+          </p>
+          <p>
+            I focus on exploring and testing technolgies that can bring the
+            audience together in shared spaces.
+          </p>
+          <p>
+            My approach and methodolgu of bringing people together using
+            technology could be used in exchange for a specific theme or topics
+            in different spaces, for example in a museum space with a particular
+            topic.
+          </p>
+        </div>
+        <div id="proposal_summary">
+          <h2>Project Proposal Summary</h2>
+          <p>
+            This is a project proposal that aims to bring people together using
+            technology as a tool. Rather
+          </p>
+        </div>
+        <div id="proposal_details">
+          <h2>Details of Proposal</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sapien
+            elit, cursus sit amet nisi sed, imperdiet efficitur enim. Sed
+            lacinia, nisl id tempor efficitur, lacus neque maximus orci, at
+            viverra ligula leo vel enim. Nulla lobortis libero at semper
+            sodales. Morbi mattis ligula id dolor viverra, sed fermentum augue
+            efficitur. In placerat tincidunt congue. Sed faucibus volutpat
+            molestie. Nam in nunc rutrum eros efficitur commodo.
+          </p>
+          <p>
+            Sed commodo, ipsum ac bibendum interdum, purus augue euismod purus,
+            sed pretium elit velit sit amet lectus. Etiam pharetra quam et
+            congue mattis. Donec laoreet placerat elit nec dictum. Pellentesque
+            placerat metus sed tellus porta, nec ultricies augue laoreet.
+            Curabitur felis orci, porta quis semper et, elementum ullamcorper
+            sem. Curabitur tincidunt malesuada sapien eu tincidunt. Nulla et
+            elit condimentum, suscipit augue et, tincidunt nibh. Suspendisse
+            scelerisque, felis in euismod dapibus, nibh magna accumsan nibh,
+            vitae lobortis magna sapien et nisi. Nulla porttitor elementum
+            libero id scelerisque. Donec lobortis vestibulum mauris sed lacinia.
+          </p>
+          <p>
+            Sed commodo, ipsum ac bibendum interdum, purus augue euismod purus,
+            sed pretium elit velit sit amet lectus. Etiam pharetra quam et
+            congue mattis. Donec laoreet placerat elit nec dictum. Pellentesque
+            placerat metus sed tellus porta, nec ultricies augue laoreet.
+            Curabitur felis orci, porta quis semper et, elementum ullamcorper
+            sem. Curabitur tincidunt malesuada sapien eu tincidunt. Nulla et
+            elit condimentum, suscipit augue et, tincidunt nibh. Suspendisse
+            scelerisque, felis in euismod dapibus, nibh magna accumsan nibh,
+            vitae lobortis magna sapien et nisi. Nulla porttitor elementum
+            libero id scelerisque. Donec lobortis vestibulum mauris sed lacinia.
+          </p>
+        </div>
+        <div id="key_activities">
+          <h2>Key Activities</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sapien
+            elit, cursus sit amet nisi sed, imperdiet efficitur enim. Sed
+            lacinia, nisl id tempor efficitur, lacus neque maximus orci, at
+            viverra ligula leo vel enim. Nulla lobortis libero at semper
+            sodales. Morbi mattis ligula id dolor viverra, sed fermentum augue
+            efficitur. In placerat tincidunt congue. Sed faucibus volutpat
+            molestie. Nam in nunc rutrum eros efficitur commodo.
+          </p>
+          <p>
+            Sed commodo, ipsum ac bibendum interdum, purus augue euismod purus,
+            sed pretium elit velit sit amet lectus. Etiam pharetra quam et
+            congue mattis. Donec laoreet placerat elit nec dictum. Pellentesque
+            placerat metus sed tellus porta, nec ultricies augue laoreet.
+            Curabitur felis orci, porta quis semper et, elementum ullamcorper
+            sem. Curabitur tincidunt malesuada sapien eu tincidunt. Nulla et
+            elit condimentum, suscipit augue et, tincidunt nibh. Suspendisse
+            scelerisque, felis in euismod dapibus, nibh magna accumsan nibh,
+            vitae lobortis magna sapien et nisi. Nulla porttitor elementum
+            libero id scelerisque. Donec lobortis vestibulum mauris sed lacinia.
+          </p>
+          <p>
+            Sed commodo, ipsum ac bibendum interdum, purus augue euismod purus,
+            sed pretium elit velit sit amet lectus. Etiam pharetra quam et
+            congue mattis. Donec laoreet placerat elit nec dictum. Pellentesque
+            placerat metus sed tellus porta, nec ultricies augue laoreet.
+            Curabitur felis orci, porta quis semper et, elementum ullamcorper
+            sem. Curabitur tincidunt malesuada sapien eu tincidunt. Nulla et
+            elit condimentum, suscipit augue et, tincidunt nibh. Suspendisse
+            scelerisque, felis in euismod dapibus, nibh magna accumsan nibh,
+            vitae lobortis magna sapien et nisi. Nulla porttitor elementum
+            libero id scelerisque. Donec lobortis vestibulum mauris sed lacinia.
+          </p>
+        </div>
+        <div id="budget">
+          <h2>Budget</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sapien
+            elit, cursus sit amet nisi sed, imperdiet efficitur enim. Sed
+            lacinia, nisl id tempor efficitur, lacus neque maximus orci, at
+            viverra ligula leo vel enim. Nulla lobortis libero at semper
+            sodales. Morbi mattis ligula id dolor viverra, sed fermentum augue
+            efficitur. In placerat tincidunt congue. Sed faucibus volutpat
+            molestie. Nam in nunc rutrum eros efficitur commodo.
+          </p>
+          <p>
+            Sed commodo, ipsum ac bibendum interdum, purus augue euismod purus,
+            sed pretium elit velit sit amet lectus. Etiam pharetra quam et
+            congue mattis. Donec laoreet placerat elit nec dictum. Pellentesque
+            placerat metus sed tellus porta, nec ultricies augue laoreet.
+            Curabitur felis orci, porta quis semper et, elementum ullamcorper
+            sem. Curabitur tincidunt malesuada sapien eu tincidunt. Nulla et
+            elit condimentum, suscipit augue et, tincidunt nibh. Suspendisse
+            scelerisque, felis in euismod dapibus, nibh magna accumsan nibh,
+            vitae lobortis magna sapien et nisi. Nulla porttitor elementum
+            libero id scelerisque. Donec lobortis vestibulum mauris sed lacinia.
+          </p>
+          <p>
+            Sed commodo, ipsum ac bibendum interdum, purus augue euismod purus,
+            sed pretium elit velit sit amet lectus. Etiam pharetra quam et
+            congue mattis. Donec laoreet placerat elit nec dictum. Pellentesque
+            placerat metus sed tellus porta, nec ultricies augue laoreet.
+            Curabitur felis orci, porta quis semper et, elementum ullamcorper
+            sem. Curabitur tincidunt malesuada sapien eu tincidunt. Nulla et
+            elit condimentum, suscipit augue et, tincidunt nibh. Suspendisse
+            scelerisque, felis in euismod dapibus, nibh magna accumsan nibh,
+            vitae lobortis magna sapien et nisi. Nulla porttitor elementum
+            libero id scelerisque. Donec lobortis vestibulum mauris sed lacinia.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div id="footer_text">
+        <p>connections</p>
+      </div>
+      <div id="footer_links">
+        <a href="https://www.instagram.com/amagine_media/ "
+          ><img src="assets\instagram-2165.png" id="insta_img"
+        /></a>
+        <a href=" https://www.behance.net/aoifemcnamara1 "
+          ><img src="assets\behance-2161.png" id="behance_img"
+        /></a>
+      </div>
+    </div>
+
+    <div id="canvas1"></div>
+    <div id="canvas2"></div>
+    <script src="index.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
