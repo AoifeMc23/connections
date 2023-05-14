@@ -1,37 +1,37 @@
-var s1 = function (sketch) {
-  sketch.setup = function () {
-    var canvas1 = sketch.createCanvas(sketch.windowWidth, sketch.windowHeight);
-    canvas1.position(0, 0);
+// var s1 = function (sketch) {
+//   sketch.setup = function () {
+//     var canvas1 = sketch.createCanvas(sketch.windowWidth, sketch.windowHeight);
+//     canvas1.position(0, 0);
 
-    canvas1.parent("#canvas1");
-    img1 = sketch.loadImage("assets/hands.png");
-  };
+//     canvas1.parent("#canvas1");
+//     img1 = sketch.loadImage("assets/hands.png");
+//   };
 
-  sketch.draw = function () {
-    sketch.background(0);
+//   sketch.draw = function () {
+//     sketch.background(0);
 
-    var scale = 1;
-    sketch.imageMode(sketch.CENTER);
+//     var scale = 1;
+//     sketch.imageMode(sketch.CENTER);
 
-    sketch.image(
-      img1,
-      0.5 * sketch.width,
-      0.6 * sketch.height,
-      scale * sketch.width,
-      (scale * img1.height * sketch.width) / img1.width
-    );
+//     sketch.image(
+//       img1,
+//       0.5 * sketch.width,
+//       0.6 * sketch.height,
+//       scale * sketch.width,
+//       (scale * img1.height * sketch.width) / img1.width
+//     );
 
-    tint(255, 127);
+//     tint(255, 127);
 
-    // sketch.blendMode(sketch.OVERLAY);
-  };
+//     // sketch.blendMode(sketch.OVERLAY);
+//   };
 
-  sketch.windowResized = function () {
-    sketch.resizeCanvas(sketch.windowWidth, sketch.windowHeight);
-  };
-};
+//   sketch.windowResized = function () {
+//     sketch.resizeCanvas(sketch.windowWidth, sketch.windowHeight);
+//   };
+// };
 
-new p5(s1);
+// new p5(s1);
 
 // var s2 = function (sketch) {
 //   sketch.setup = function () {

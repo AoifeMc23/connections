@@ -14,6 +14,9 @@
       href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,22 +24,100 @@
       rel="stylesheet"
     />
 
+    
+
     <script src="libraries/p5.min.js"></script>
   </head>
 
   <body onload="load()">
     <div id="page_content">
-      <div id="title_container">
-        <img src="assets\title.svg" id="title_image" />
-        <p class="quote">
-          "a relationship in which a person or thing is linked or associated
-          with something else" ----
-          <span class="quote_source">Oxford Languages</span>
-        </p>
+
+      <div class="videosize" id="empty_container"></div>
+
+      <!-- HEADER -->
+
+      <div id="header">
+        <div id="header_text">
+          <a href="#empty_container">
+          <p>connections</p>
+        </a>
+        </div>
+        <div id="header_links">
+          <a href="https://www.instagram.com/amagine_media/ "
+            ><img src="assets\instagram-2165.png" id="insta_img"
+          /></a>
+          <a href=" https://www.behance.net/aoifemcnamara1 "
+            ><img src="assets\behance-2161.png" id="behance_img"
+          /></a>
+        </div>
+
+        <!-- HAM BURGER MENU -->
+
+        <!-- Menu icon by Icons8 -->
+
+        <div id="hamburger_menu" >
+          <div id="hamburger_icon">
+          <a class="transition" href="javascript:void(0);" onclick="showHamburgerMenu()"
+          ><img src="assets\hamburgerIcon.png" id="hamburger_img"
+        /></a>
       </div>
 
+         <div id="hamburger_links">
+
+            <a href="javascript:void(0);" onclick="hideHamburgerMenu()"
+            ><img src="assets\menuCross.png" id="hamburger_img"
+          /></a>
+
+
+          <a href="#artist_statement" onclick="showArtist()"
+            >ARTIST STATEMENT</a
+          >
+
+          <a
+          href="#proposal_summary"
+          id="summary_button"
+          onclick="showSummary()"
+          >PROJECT PROPOSAL SUMMARY</a
+        >
+
+        <a
+        href="#proposal_summary"
+        onclick="showSummary()"
+        >PROJECT PROPOSAL SUMMARY</a>
+      <a
+        href="#proposal_details"
+        onclick="showDetails()"
+        >DETAILS OF PROPOSAL</a>
+      <a href="#key_activities"
+        onclick="showActivities()">KEY ACTIVITIES</a>
+      <a href="#budget" onclick="showBudget()">BUDGET</a>
+    </div>
+  </div>
+        
+      </div>
+
+   
+
+      <!-- MAIN VIDEO -->
+
+      <div id="mainvideo_container">
+        <video class="videosize" width="100%" id="mainvideo" autoplay loop muted>
+          <source
+            src="assets\website_mainvideo.mp4"
+            type="video/mp4"
+            autoplay
+            loop
+            muted
+          />
+      </div>
+
+      <p id="quote">
+        a project proposal for an interactive art and technology installation
+        that aims to engage the audience using interactive media.
+      </p>
+
       <div id="intro_container" class="align_center">
-        <div id="video">
+        <!-- <div id="fyp_video">
           <iframe
             src="https://www.youtube.com/embed/_kTXDoybJ-U"
             title="YouTube video player"
@@ -44,104 +125,108 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-        </div>
+        </div> -->
+
+
         <div id="intro_links">
           <a href="#artist_statement" id="artist_button" onclick="showArtist()"
-            >Artist Statement</a
+            >ARTIST STATEMENT</a
           >
           <a
             href="#proposal_summary"
             id="summary_button"
             onclick="showSummary()"
-            >Project Proposal Summary</a
+            >PROJECT PROPOSAL SUMMARY</a
           >
           <a
             href="#proposal_details"
             id="details_button"
             onclick="showDetails()"
-            >Details of Proposal</a
+            >DETAILS OF PROPOSAL</a
           >
           <a
             href="#key_activities"
             id="activities_button"
             onclick="showActivities()"
-            >Key Activities</a
+            >KEY ACTIVITIES</a
           >
-          <a href="#budget" id="budget_button" onclick="showBudget()">Budget</a>
+          <a href="#budget" id="budget_button" onclick="showBudget()">BUDGET</a>
         </div>
       </div>
 
       <div id="main_container">
         <div id="artist_statement">
-          <h2>Artist Statement</h2>
+          <h2>ARTIST STATEMENT</h2>
+          <img src="assets\headshot.png" id="headshot"/>
           <p>
-            Hello! My name is Aoife McNamara and I am a graduate of Creative
-            Digital Media BA hons, Munster Technological University Cork. I am a
-            professional artist, in the early stages of their career, whose work
-            focuses on connecting people with tehcnology in shared spaces.
-          </p>
-          <p><i>"Connect together, not alone"</i></p>
-          <p>
-            The methodolgies behind my work involves thorough experiments where
-            I explore the limits of my skills with different technologies and
-            how best they can create an experience for the audience.
+            Aoife McNamara is a Videographer, Photographer and Visual Artist
+            from Cork, Ireland in the early stages of her artist career. She is
+            a recent graduate of Creative Digital Media BA (Hons) from Munster
+            Technological University. With a passion for working with
+            interactive technologies, she connected her knowledge and skills
+            from her degree to explore using these interactive technologies in a
+            larger scale art installation.
           </p>
           <p>
-            I focus on exploring and testing technolgies that can bring the
-            audience together in shared spaces.
-          </p>
-          <p>
-            My approach and methodolgu of bringing people together using
-            technology could be used in exchange for a specific theme or topics
-            in different spaces, for example in a museum space with a particular
-            topic.
+            Aoife’s latest project, connections, focuses on engaging the
+            audience with technology and each other in a shared space. Audience
+            members are invited to engage with the installation to explore a new
+            way of social technology. The methodologies behind her work involves
+            thorough experiments where she explores the limits of her skills
+            with different softwares and devices to create an interactive
+            experience for the audience.
           </p>
         </div>
         <div id="proposal_summary">
-          <h2>Project Proposal Summary</h2>
+          <h2>PROJECT PROPOSAL SUMMARY</h2>
           <p>
-            This is a project proposal that aims to bring people together using
-            technology as a tool. Rather
+            This project “connections”, is an interactive art installation that
+            is generated by the audience's presence. The project aims to
+            highlight the idea social spaces are changing and becoming places of
+            social collection. It uses interactive technologies to collectively
+            engage the audience in a shared art piece where the audience’s input
+            is the key factor. Without the audience, the piece doesn’t show and
+            the more audience members there are, the more reactive and engaging
+            the installation becomes.
+          </p>
+          <p>
+            The motivation for this project came from the idea that our once
+            communal spaces such as a cafe or the park are becoming spaces of
+            “social collection” where “people come together but do not speak to
+            each other.” This interactive art and technology installation aims
+            to highlight this observation, using visual arts as a medium. It
+            utilises the audience's interactions through their audio input and
+            hand movements to create an immersive and thought provoking
+            experience, which is enhanced through the presence of a larger
+            audience.
           </p>
         </div>
         <div id="proposal_details">
-          <h2>Details of Proposal</h2>
+          <h2>DETAILS OF PROPOSAL</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sapien
-            elit, cursus sit amet nisi sed, imperdiet efficitur enim. Sed
-            lacinia, nisl id tempor efficitur, lacus neque maximus orci, at
-            viverra ligula leo vel enim. Nulla lobortis libero at semper
-            sodales. Morbi mattis ligula id dolor viverra, sed fermentum augue
-            efficitur. In placerat tincidunt congue. Sed faucibus volutpat
-            molestie. Nam in nunc rutrum eros efficitur commodo.
+            There are two elements of interactive graphics that are used in this
+            installation. The first is the audience’s audio input. The
+            audience’s audio levels are captured through microphones around the
+            room and brought into the software Touchdesigner. In real time, the
+            audio input is collected and used to create graphics that are then
+            projected onto the floor.
           </p>
           <p>
-            Sed commodo, ipsum ac bibendum interdum, purus augue euismod purus,
-            sed pretium elit velit sit amet lectus. Etiam pharetra quam et
-            congue mattis. Donec laoreet placerat elit nec dictum. Pellentesque
-            placerat metus sed tellus porta, nec ultricies augue laoreet.
-            Curabitur felis orci, porta quis semper et, elementum ullamcorper
-            sem. Curabitur tincidunt malesuada sapien eu tincidunt. Nulla et
-            elit condimentum, suscipit augue et, tincidunt nibh. Suspendisse
-            scelerisque, felis in euismod dapibus, nibh magna accumsan nibh,
-            vitae lobortis magna sapien et nisi. Nulla porttitor elementum
-            libero id scelerisque. Donec lobortis vestibulum mauris sed lacinia.
+            The second is the audience’s physical bodies, specifically their
+            hands. Using touchdesigner, their right hands movement is tracked
+            and projected directly onto the wall allowing the audience to
+            uncover meaning
           </p>
           <p>
-            Sed commodo, ipsum ac bibendum interdum, purus augue euismod purus,
-            sed pretium elit velit sit amet lectus. Etiam pharetra quam et
-            congue mattis. Donec laoreet placerat elit nec dictum. Pellentesque
-            placerat metus sed tellus porta, nec ultricies augue laoreet.
-            Curabitur felis orci, porta quis semper et, elementum ullamcorper
-            sem. Curabitur tincidunt malesuada sapien eu tincidunt. Nulla et
-            elit condimentum, suscipit augue et, tincidunt nibh. Suspendisse
-            scelerisque, felis in euismod dapibus, nibh magna accumsan nibh,
-            vitae lobortis magna sapien et nisi. Nulla porttitor elementum
-            libero id scelerisque. Donec lobortis vestibulum mauris sed lacinia.
+            The project uses Touchdesigner to create the graphics with the
+            audience's input coming from an Xbox Kinect v2 and microphones. The
+            interactive graphics are then projected on one wall and the floor
+            where the audience can interact with the project and immediately see
+            the results of their connections with each other.
           </p>
         </div>
         <div id="key_activities">
-          <h2>Key Activities</h2>
+          <h2>KEY ACTIVITES</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sapien
             elit, cursus sit amet nisi sed, imperdiet efficitur enim. Sed
@@ -177,7 +262,7 @@
           </p>
         </div>
         <div id="budget">
-          <h2>Budget</h2>
+          <h2>BUDGET</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sapien
             elit, cursus sit amet nisi sed, imperdiet efficitur enim. Sed
@@ -213,22 +298,29 @@
           </p>
         </div>
       </div>
-    </div>
-
-    <div id="footer">
-      <div id="footer_text">
-        <p>connections</p>
-      </div>
-      <div id="footer_links">
+      <div id="footer_container">
+        <div id="footer_caption">
+          <h1>GET IN TOUCH</h1>
+        </div>
+        <div id="footer_text">
+        <p>FOLLOW MY WORK</p>
+        <div id="footer_social">
         <a href="https://www.instagram.com/amagine_media/ "
-          ><img src="assets\instagram-2165.png" id="insta_img"
-        /></a>
-        <a href=" https://www.behance.net/aoifemcnamara1 "
-          ><img src="assets\behance-2161.png" id="behance_img"
-        /></a>
+        ><img src="assets\instagram-2165.png" id="footer_insta"
+      /></a>
+      <a href=" https://www.behance.net/aoifemcnamara1 "
+        ><img src="assets\behance-2161.png" id="footer_behance"
+      /></a>
+    </div>
+        </div>
       </div>
     </div>
 
+    
+
+    
+
+    
     <div id="canvas1"></div>
     <div id="canvas2"></div>
     <script src="index.js"></script>

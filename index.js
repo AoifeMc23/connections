@@ -3,6 +3,7 @@ var summaryDiv = document.getElementById("proposal_summary");
 var detailsDiv = document.getElementById("proposal_details");
 var activitiesDiv = document.getElementById("key_activities");
 var budgetDiv = document.getElementById("budget");
+var hamburgerLinks = document.getElementById("hamburger_links");
 
 function load() {
   artistDiv.style.display = "none";
@@ -19,6 +20,7 @@ function showArtist() {
     detailsDiv.style.display = "none";
     activitiesDiv.style.display = "none";
     budgetDiv.style.display = "none";
+    hamburgerLinks.style.display = "none";
   } else {
     artistDiv.style.display = "none";
   }
@@ -31,6 +33,7 @@ function showSummary() {
     detailsDiv.style.display = "none";
     activitiesDiv.style.display = "none";
     budgetDiv.style.display = "none";
+    hamburgerLinks.style.display = "none";
   } else {
     summaryDiv.style.display = "none";
   }
@@ -43,6 +46,7 @@ function showDetails() {
     detailsDiv.style.display = "block";
     activitiesDiv.style.display = "none";
     budgetDiv.style.display = "none";
+    hamburgerLinks.style.display = "none";
   } else {
     detailsDiv.style.display = "none";
   }
@@ -55,6 +59,7 @@ function showActivities() {
     detailsDiv.style.display = "none";
     activitiesDiv.style.display = "block";
     budgetDiv.style.display = "none";
+    hamburgerLinks.style.display = "none";
   } else {
     activitiesDiv.style.display = "none";
   }
@@ -67,7 +72,28 @@ function showBudget() {
     detailsDiv.style.display = "none";
     activitiesDiv.style.display = "none";
     budgetDiv.style.display = "block";
+    hamburgerLinks.style.display = "none";
   } else {
     budgetDiv.style.display = "none";
+  }
+}
+
+var hamburgerCross = document.getElementById("hamburger_cross");
+
+function showHamburgerMenu() {
+  var hamBurgerMenu = document.getElementById("hamburger_links");
+  if (hamBurgerMenu.style.display === "block") {
+    hamBurgerMenu.style.display = "none";
+  } else {
+    hamBurgerMenu.style.display = "block";
+  }
+}
+
+function hideHamburgerMenu() {
+  var hamBurgerMenu = document.getElementById("hamburger_links");
+  if (hamBurgerMenu.style.display === "block") {
+    hamBurgerMenu.style.display = "none";
+  } else {
+    hamBurgerMenu.style.display = "block";
   }
 }
