@@ -14,9 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,109 +27,86 @@
       rel="stylesheet"
     />
 
-    
-
     <script src="libraries/p5.min.js"></script>
   </head>
 
   <body onload="load()">
     <div id="page_content">
+      <div id="pageone_container">
+        <div id="header">
+          <div id="header_text">
+            <a href="#empty_container">
+              <p>connections</p>
+            </a>
+          </div>
+          <div id="header_links">
+            <a href="https://www.instagram.com/amagine_media/ "
+              ><img src="assets\instagram-2165.png" id="insta_img"
+            /></a>
+            <a href=" https://www.behance.net/aoifemcnamara1 "
+              ><img src="assets\behance-2161.png" id="behance_img"
+            /></a>
+          </div>
 
-      <div class="videosize" id="empty_container"></div>
+          <div id="hamburger_menu">
+            <div class="hamburger_icon">
+              <a
+                class="transition"
+                href="javascript:void(0);"
+                onclick="showHamburgerMenu()"
+                ><img
+                  src="assets\hamburgerIcon.png"
+                  id="hamburger"
+                  class="hamburger_img"
+              /></a>
+              <a href="javascript:void(0);" onclick="hideHamburgerMenu()"
+                ><img
+                  src="assets\menuCross.png"
+                  id="cross"
+                  class="hamburger_img"
+              /></a>
+            </div>
 
-      <!-- HEADER -->
+            <div id="hamburger_links">
+              <a href="#artist_statement" onclick="showArtist()"
+                >ARTIST STATEMENT</a
+              >
 
-      <div id="header">
-        <div id="header_text">
-          <a href="#empty_container">
-          <p>connections</p>
-        </a>
+              <a
+                href="#proposal_summary"
+                id="summary_button"
+                onclick="showSummary()"
+                >PROJECT PROPOSAL SUMMARY</a
+              >
+
+              <a href="#proposal_summary" onclick="showSummary()"
+                >PROJECT PROPOSAL SUMMARY</a
+              >
+              <a href="#proposal_details" onclick="showDetails()"
+                >DETAILS OF PROPOSAL</a
+              >
+              <a href="#key_activities" onclick="showActivities()"
+                >KEY ACTIVITIES</a
+              >
+              <a href="#budget" onclick="showBudget()">BUDGET</a>
+            </div>
+          </div>
         </div>
-        <div id="header_links">
-          <a href="https://www.instagram.com/amagine_media/ "
-            ><img src="assets\instagram-2165.png" id="insta_img"
-          /></a>
-          <a href=" https://www.behance.net/aoifemcnamara1 "
-            ><img src="assets\behance-2161.png" id="behance_img"
-          /></a>
+
+        <div id="mainvideo_container">
+          <video id="mainvideo" playsinline autoplay loop muted>
+            <source src="assets\website_mainvideo_3.mp4" type="video/mp4" />
+          </video>
         </div>
-
-        <!-- HAM BURGER MENU -->
-
-        <!-- Menu icon by Icons8 -->
-
-        <div id="hamburger_menu" >
-          <div id="hamburger_icon">
-          <a class="transition" href="javascript:void(0);" onclick="showHamburgerMenu()"
-          ><img src="assets\hamburgerIcon.png" id="hamburger_img"
-        /></a>
+        <div class="quote_container">
+          <p id="quotes">
+            a project proposal for an interactive art and technology
+            installation that aims to engage the audience using interactive
+            media.
+          </p>
+        </div>
       </div>
-
-         <div id="hamburger_links">
-
-            <a href="javascript:void(0);" onclick="hideHamburgerMenu()"
-            ><img src="assets\menuCross.png" id="hamburger_img"
-          /></a>
-
-
-          <a href="#artist_statement" onclick="showArtist()"
-            >ARTIST STATEMENT</a
-          >
-
-          <a
-          href="#proposal_summary"
-          id="summary_button"
-          onclick="showSummary()"
-          >PROJECT PROPOSAL SUMMARY</a
-        >
-
-        <a
-        href="#proposal_summary"
-        onclick="showSummary()"
-        >PROJECT PROPOSAL SUMMARY</a>
-      <a
-        href="#proposal_details"
-        onclick="showDetails()"
-        >DETAILS OF PROPOSAL</a>
-      <a href="#key_activities"
-        onclick="showActivities()">KEY ACTIVITIES</a>
-      <a href="#budget" onclick="showBudget()">BUDGET</a>
-    </div>
-  </div>
-        
-      </div>
-
-   
-
-      <!-- MAIN VIDEO -->
-
-      <div id="mainvideo_container">
-        <video class="videosize" width="100%" id="mainvideo" playsinline autoplay loop muted>
-          <source
-            src="assets\website_mainvideo_3.mp4"
-            type="video/mp4"
-            
-        
-          />
-      </div>
-
-      <p id="quote">
-        a project proposal for an interactive art and technology installation
-        that aims to engage the audience using interactive media.
-      </p>
-
-      <div id="intro_container" class="align_center">
-        <!-- <div id="fyp_video">
-          <iframe
-            src="https://www.youtube.com/embed/_kTXDoybJ-U"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div> -->
-
-
+      <div id="intro_container">
         <div id="intro_links">
           <a href="#artist_statement" id="artist_button" onclick="showArtist()"
             >ARTIST STATEMENT</a
@@ -156,7 +136,7 @@
       <div id="main_container">
         <div id="artist_statement">
           <h2>ARTIST STATEMENT</h2>
-          <img src="assets\headshot.png" id="headshot"/>
+          <img src="assets\headshot.png" id="headshot" />
           <p>
             Aoife McNamara is a Videographer, Photographer and Visual Artist
             from Cork, Ireland in the early stages of her artist career. She is
@@ -297,31 +277,28 @@
           </p>
         </div>
       </div>
+
       <div id="footer_container">
         <div id="footer_caption">
           <h1>GET IN TOUCH</h1>
         </div>
         <div id="footer_text">
-        <p>FOLLOW MY WORK</p>
-        <div id="footer_social">
-        <a href="https://www.instagram.com/amagine_media/ "
-        ><img src="assets\instagram-2165.png" id="footer_insta"
-      /></a>
-      <a href=" https://www.behance.net/aoifemcnamara1 "
-        ><img src="assets\behance-2161.png" id="footer_behance"
-      /></a>
-    </div>
+          <p>FOLLOW MY WORK</p>
+          <div id="footer_social">
+            <a href="https://www.instagram.com/amagine_media/ "
+              ><img src="assets\instagram-2165.png" id="footer_insta"
+            /></a>
+            <a href=" https://www.behance.net/aoifemcnamara1 "
+              ><img src="assets\behance-2161.png" id="footer_behance"
+            /></a>
+          </div>
         </div>
       </div>
+
+      <div id="canvas1"></div>
+      <div id="canvas2"></div>
     </div>
 
-    
-
-    
-
-    
-    <div id="canvas1"></div>
-    <div id="canvas2"></div>
     <script src="index.js"></script>
     <script src="sketch.js"></script>
   </body>

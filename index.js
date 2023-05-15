@@ -4,6 +4,9 @@ var detailsDiv = document.getElementById("proposal_details");
 var activitiesDiv = document.getElementById("key_activities");
 var budgetDiv = document.getElementById("budget");
 var hamburgerLinks = document.getElementById("hamburger_links");
+var cross = document.getElementById("cross");
+var hamburger = document.getElementById("hamburger");
+var hamBurgerMenu = document.getElementById("hamburger_links");
 
 function load() {
   artistDiv.style.display = "none";
@@ -78,21 +81,21 @@ function showBudget() {
   }
 }
 
-var hamburgerCross = document.getElementById("hamburger_cross");
-
 function showHamburgerMenu() {
-  var hamBurgerMenu = document.getElementById("hamburger_links");
-  if (hamBurgerMenu.style.display === "block") {
-    hamBurgerMenu.style.display = "none";
-  } else {
+  hamBurgerMenu.style.display = "none";
+
+  if (hamBurgerMenu.style.display === "none") {
     hamBurgerMenu.style.display = "block";
+    hamburger.style.display = "none";
+    cross.style.display = "block";
   }
 }
 
 function hideHamburgerMenu() {
-  var hamBurgerMenu = document.getElementById("hamburger_links");
   if (hamBurgerMenu.style.display === "block") {
     hamBurgerMenu.style.display = "none";
+    hamburger.style.display = "block";
+    cross.style.display = "none";
   } else {
     hamBurgerMenu.style.display = "block";
   }

@@ -1,7 +1,11 @@
+/* RESETS START */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgba(255, 255, 255, 0.849);
   background-color: #000000;
-
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,15 +18,17 @@ h1 {
   font-size: 40px;
 }
 
-h2 {
+h2,
+h3 {
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   font-size: 30px;
 }
 
+/* RESETS END */
+
 #page_content p {
   font-family: "Comfortaa", cursive;
-  font-size: 15px;
   line-height: 1.6;
 }
 
@@ -51,14 +57,6 @@ h2 {
   border-radius: 20px;
 }
 
-#intro_container {
-  margin: 30px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 canvas {
   display: block;
 }
@@ -66,27 +64,6 @@ canvas {
 iframe {
   width: 560px;
   height: 300px;
-}
-
-/* CLASSES */
-.align_center {
-  width: 100vw;
-  padding: 20px 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.videosize {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-bottom: 600px;
 }
 
 .transition {
@@ -105,10 +82,70 @@ iframe {
 #hamburger_crossicon {
   display: none;
 }
-/* IDS */
 
-#empty_container {
+#pageone_container {
   position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#header {
+  z-index: 1;
+  color: white;
+  position: fixed;
+  width: 89vw;
+  padding: 0 20px 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+}
+
+#mainvideo_container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#mainvideo_container video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#intro_container {
+}
+
+.quote_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+}
+
+#quotes {
+  font-family: "Varela", sans-serif;
+  color: white;
+  font-size: 23px;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+}
+
+#connect_text {
+  position: relative;
+  height: 80px;
+  border: 1px solid red;
+  width: 100%;
+  text-align: center;
+}
+
+#connect_text h3 {
+  font-size: 50px;
 }
 
 #title_image {
@@ -118,26 +155,6 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-#mainvideo_container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-#mainvideo video {
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #page_content {
@@ -151,18 +168,6 @@ iframe {
   z-index: 100;
 }
 
-#quote {
-  position: absolute;
-  font-family: "Varela", sans-serif;
-  font-size: 15px;
-  color: white;
-  left: 50%;
-  top: 35%;
-  transform: translate(-50%, 50%);
-  text-align: center;
-  letter-spacing: 4.5px;
-}
-
 #page_content::-webkit-scrollbar {
   display: none;
 }
@@ -174,25 +179,12 @@ iframe {
 #main_container {
   position: relative;
   width: 89vw;
-  padding-bottom: 80px;
   text-align: left;
 }
 
 #intro_links {
   margin: 50px 0 0 0;
-}
-
-#header {
-  /* background: rgba(0, 0, 0, 0.11); */
-  color: rgb(255, 255, 255);
-  position: fixed;
-  width: 89vw;
-  z-index: 200;
-  padding: 0 20px 0 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 80px;
+  z-index: 100;
 }
 
 #header_text {
@@ -282,16 +274,31 @@ iframe {
 
   /* HAM BURGER MENU */
 
-  #hamburger_icon img {
+  .hamburger_icon img {
+    z-index: 10;
     display: block;
     position: absolute;
     right: 0;
-    padding-right: 40px;
+    padding-right: 30px;
+    transform: translateY(-50%);
   }
 
-  #hamburger_img {
-    width: 20px;
+  .hamburger_img {
+    width: 30px;
     position: absolute;
+  }
+
+  #cross {
+    z-index: 10;
+    display: none;
+    width: 40px;
+  }
+
+  #hamburger {
+    z-index: 10;
+    display: block;
+    width: 40px;
+    height: 50px;
   }
 
   #hamburger_links {
