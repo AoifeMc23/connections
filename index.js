@@ -7,6 +7,7 @@ var hamburgerLinks = document.getElementById("hamburger_links");
 var cross = document.getElementById("cross");
 var hamburger = document.getElementById("hamburger");
 var hamBurgerMenu = document.getElementById("hamburger_links");
+var header = document.getElementById("header");
 
 function load() {
   artistDiv.style.display = "none";
@@ -24,6 +25,8 @@ function showArtist() {
     activitiesDiv.style.display = "none";
     budgetDiv.style.display = "none";
     hamburgerLinks.style.display = "none";
+    hamburger.style.display = "block";
+    cross.style.display = "none";
   } else {
     artistDiv.style.display = "none";
   }
@@ -37,6 +40,8 @@ function showSummary() {
     activitiesDiv.style.display = "none";
     budgetDiv.style.display = "none";
     hamburgerLinks.style.display = "none";
+    hamburger.style.display = "block";
+    cross.style.display = "none";
   } else {
     summaryDiv.style.display = "none";
   }
@@ -50,6 +55,8 @@ function showDetails() {
     activitiesDiv.style.display = "none";
     budgetDiv.style.display = "none";
     hamburgerLinks.style.display = "none";
+    hamburger.style.display = "block";
+    cross.style.display = "none";
   } else {
     detailsDiv.style.display = "none";
   }
@@ -63,6 +70,8 @@ function showActivities() {
     activitiesDiv.style.display = "block";
     budgetDiv.style.display = "none";
     hamburgerLinks.style.display = "none";
+    hamburger.style.display = "block";
+    cross.style.display = "none";
   } else {
     activitiesDiv.style.display = "none";
   }
@@ -76,6 +85,8 @@ function showBudget() {
     activitiesDiv.style.display = "none";
     budgetDiv.style.display = "block";
     hamburgerLinks.style.display = "none";
+    hamburger.style.display = "block";
+    cross.style.display = "none";
   } else {
     budgetDiv.style.display = "none";
   }
@@ -96,7 +107,5 @@ function hideHamburgerMenu() {
     hamBurgerMenu.style.display = "none";
     hamburger.style.display = "block";
     cross.style.display = "none";
-  } else {
-    hamBurgerMenu.style.display = "block";
   }
 }

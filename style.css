@@ -108,6 +108,10 @@ iframe {
 }
 
 /* HAM BURGER MENU */
+
+#hamburger_menu {
+  display: none;
+}
 #hamburger_links a {
   display: none;
 }
@@ -125,6 +129,7 @@ iframe {
 }
 
 #pageone_container {
+  z-index: 999;
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -132,16 +137,44 @@ iframe {
   justify-content: center;
 }
 
+#pageone_container svg {
+  display: flex;
+  animation: 2s ease infinite scroll_down;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  align-self: flex-start;
+}
+
+@keyframes scroll_down {
+  0% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+
 #header {
   z-index: 1;
   color: white;
+
   position: fixed;
-  width: 89vw;
+  width: 100vw;
   padding: 0 20px 0 20px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   height: 80px;
+}
+
+#header_text {
+  margin-left: 4.5vw;
 }
 
 #mainvideo_container {
@@ -240,6 +273,7 @@ iframe {
   right: 0;
   padding-right: 40px;
   transition: 1s;
+  margin-right: 4vw;
 }
 
 #header_links img {
@@ -284,25 +318,47 @@ iframe {
   width: 50vw;
 }
 
+.items_center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 /* FOOTER */
 
 #footer_container {
   position: relative;
-  bottom: 0;
+
   color: white;
-  z-index: 100;
-  width: 89vw;
-  margin: 40px;
+  margin-bottom: 60px;
+}
+
+#footer_info a {
+  text-decoration: none;
+}
+#footer_info a p {
+  color: white;
+  font-size: 18px;
+}
+
+#footer_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #footer_insta,
 #footer_behance {
-  width: 20px;
+  width: 40px;
+  margin: 12px;
 }
 
 #footer_social {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #footer_caption {
@@ -314,6 +370,10 @@ iframe {
 /* Media Queries */
 @media only screen and (max-width: 1000px) {
   #intro_container a:link {
+    display: none;
+  }
+
+  #canvas1 {
     display: none;
   }
 
@@ -330,7 +390,15 @@ iframe {
     display: none;
   }
 
+  #header {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
   /* HAM BURGER MENU */
+
+  #hamburger_menu {
+    display: block;
+  }
 
   .hamburger_icon img {
     z-index: 10;
