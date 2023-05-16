@@ -14,15 +14,15 @@ body {
 
 h1 {
   font-family: "Varela Round", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 40px;
 }
 
 h2,
 h3 {
   font-family: "Varela Round", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
+  font-weight: 300;
+  font-size: 20px;
 }
 
 /* RESETS END */
@@ -45,17 +45,54 @@ h3 {
   transition-timing-function: ease-in-out;
 }
 
-#intro_container a:visited {
+#intro_container a:visited,
+#mouse_container a:visited,
+#footer_info a:visited {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.849);
 }
 
-#intro_container a:hover {
+#intro_container a:hover,
+#mouse_container a:hover {
   color: black;
   font-size: 15px;
   background-color: rgba(255, 255, 255, 0.849);
   border-radius: 20px;
 }
+
+#footer_info a:link {
+  font-size: 13px;
+  font-family: "Comfortaa", cursive;
+}
+
+#mouse_container a:link {
+  font-size: 10px;
+  text-decoration: none;
+  font-family: "Comfortaa", cursive;
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.849);
+  background-color: rgba(255, 255, 255, 0.849);
+  border-radius: 20px;
+  padding: 12.5px;
+  margin: 10px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#mouse_container {
+  /* border: 1px solid red; */
+  height: 40px;
+  margin-top: 30px;
+  align-items: right;
+}
+
+/* #mouse_on {
+  display: block;
+}
+
+#mouse_off {
+  display: none;
+} */
 
 canvas {
   display: block;
@@ -135,7 +172,7 @@ iframe {
 #quotes {
   font-family: "Varela", sans-serif;
   color: white;
-  font-size: 23px;
+  font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 4.5px;
 }
@@ -184,6 +221,7 @@ iframe {
   position: relative;
   width: 89vw;
   text-align: left;
+  margin-top: 60px;
 }
 
 #intro_links {
@@ -224,11 +262,26 @@ iframe {
   transition: 0.5s;
   transition-timing-function: ease-in-out;
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.849);
 }
 
 #header_text a:visited {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.849);
+}
+
+#header_text a:hover {
+  font-size: 16px;
+}
+
+#canvas1 {
+  z-index: 200;
+  width: 400vw;
+  height: 100vh;
+}
+
+.detail_videos {
+  width: 50vw;
 }
 
 /* FOOTER */
@@ -238,7 +291,8 @@ iframe {
   bottom: 0;
   color: white;
   z-index: 100;
-  width: 100%;
+  width: 89vw;
+  margin: 40px;
 }
 
 #footer_insta,
@@ -295,14 +349,14 @@ iframe {
   #cross {
     z-index: 10;
     display: none;
-    width: 40px;
+    width: 20px;
   }
 
   #hamburger {
     z-index: 10;
     display: block;
-    width: 40px;
-    height: 50px;
+    width: 30px;
+    /* height: 50px; */
   }
 
   #hamburger_links {
@@ -341,5 +395,9 @@ iframe {
 
   #hamburger_links a:hover {
     font-size: 15px;
+  }
+
+  #mouse_container {
+    display: none;
   }
 }
